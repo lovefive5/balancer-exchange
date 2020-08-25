@@ -139,10 +139,10 @@ const AssetSelector = observer(() => {
             <ModalContent ref={ref}>
                 <AssetSelectorHeader>
                     <HeaderContent>
-                        Select Token to{' '}
+                        选择一个代币{' '}
                         {assetModalState.input === 'inputAmount'
-                            ? `Sell for ${swapFormStore.outputToken.symbol}`
-                            : `Buy with ${swapFormStore.inputToken.symbol}`}
+                            ? `卖出 换取 ${swapFormStore.outputToken.symbol}`
+                            : `买入 通过卖出 ${swapFormStore.inputToken.symbol}`}
                     </HeaderContent>
                     <ExitComponent
                         onClick={() => {
@@ -155,7 +155,7 @@ const AssetSelector = observer(() => {
                 <InputContainer>
                     <input
                         onChange={e => onChange(e)}
-                        placeholder="Search Token Name, Symbol, or Address"
+                        placeholder="搜索代币名称或合约地址"
                         ref={inputRef}
                     />
                 </InputContainer>

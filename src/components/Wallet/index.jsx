@@ -161,7 +161,7 @@ const Wallet = observer(() => {
             return (
                 <Button
                     onClick={toggleWalletDropdown}
-                    buttonText="Connect Wallet"
+                    buttonText="连接钱包"
                     active={true}
                 />
             );

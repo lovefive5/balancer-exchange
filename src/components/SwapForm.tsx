@@ -65,7 +65,7 @@ enum ButtonState {
     SWAP,
 }
 
-const ButtonText = ['Connect Wallet', 'Unlock', 'Swap'];
+const ButtonText = ['连接钱包', '解锁', '兑换'];
 
 const SwapForm = observer(({ tokenIn, tokenOut }) => {
     const {
@@ -294,7 +294,7 @@ const SwapForm = observer(({ tokenIn, tokenOut }) => {
         if (!isEmpty(errorMessage)) {
             return <ErrorDisplay errorText={errorMessage} />;
         } else {
-            return <MessageBlock>Enter Order Details to Continue</MessageBlock>;
+            return <MessageBlock>输入订单信息以继续</MessageBlock>;
         }
     };
 

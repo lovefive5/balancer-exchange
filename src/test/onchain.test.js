@@ -79,6 +79,6 @@ test('Confirm correct DAI icon retrival', async () => {
     const iconAddress = TokenIconAddress(checkSumAddr);
     console.log(iconAddress);
     expect(iconAddress).toEqual(
-        'https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png'
+        'https://ethapi.meet.one/trustwallet/assets/master/blockchains/ethereum/assets/0x6B175474E89094C44Da98b954EedeAC495271d0F/logo.png'
     );
 });

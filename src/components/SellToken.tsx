@@ -33,7 +33,7 @@ const SellToken = observer(
 
         return (
             <TokenPanel
-                headerText="Token to Sell"
+                headerText="卖出代币"
                 value={inputAmount}
                 onChange={e => onChange(e)}
                 updateSwapFormData={updateSwapFormData}

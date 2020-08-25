@@ -131,7 +131,7 @@ const WalletDropdown = observer(() => {
                                     setWalletView(WALLET_VIEWS.OPTIONS);
                                 }}
                             >
-                                Connect to a different wallet
+                                连接其他钱包
                             </StyledLink>
                         )}
                     </>
