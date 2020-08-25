@@ -40,22 +40,27 @@ const Link = styled.a`
 `;
 
 const GeneralNotification = () => {
+    // let isClose = false;
+
+    // setTimeout(() => {
+    //     console.log(isClose)
+    //     isClose = true;
+    // }, 5000);
     return (
         <Wrapper>
             <Warning>
                 <WarningIcon src="info-general-notification.svg" />
-                <Message>
-                    The exchange has been upgraded to use multi-path order
-                    routing which improves overall pricing and gas usage. You
-                    will need to unlock tokens again for the new{' '}
+                <Message style={{ textAlign: 'justify' }}>
+                    该交易所已升级为使用多路径订单路由技术，从而改善整体定价和gas使用量。
+                    您需要再次解锁token ,以使用新的
                     <Link
                         href="https://etherscan.io/address/0xB56b171C05d5FfCc623f8Ee497ef1Ce838179169#code"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        proxy contract
+                        代理合约
                     </Link>
-                    . To use the old exchange proxy visit:{' '}
+                    . 若要使用旧的交易所代理，请访问{' '}
                     <Link
                         href="https://legacy.balancer.exchange"
                         target="_blank"
